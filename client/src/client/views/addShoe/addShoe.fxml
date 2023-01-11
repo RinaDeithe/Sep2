@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="client.views.addShoe.AddShoeController">
+    <children>
+        <AnchorPane layoutX="89.0" layoutY="34.0" prefHeight="332.0"
+                    prefWidth="422.0">
+            <children>
+                <Text layoutX="42.0" layoutY="31.0" strokeType="OUTSIDE"
+                      strokeWidth="0.0" text="Product number:"/>
+                <Text layoutX="83.0" layoutY="122.0" strokeType="OUTSIDE"
+                      strokeWidth="0.0" text="Location:"/>
+                <Text layoutX="99.0" layoutY="164.0" strokeType="OUTSIDE"
+                      strokeWidth="0.0" text="Price:"/>
+                <Text layoutX="107.0" layoutY="205.0" strokeType="OUTSIDE"
+                      strokeWidth="0.0" text="Sex:"/>
+                <TextField fx:id="productNumberInput" layoutX="148.0"
+                           layoutY="14.0"/>
+                <TextField fx:id="locationInput" layoutX="147.0"
+                           layoutY="105.0"/>
+                <TextField fx:id="priceInput" layoutX="147.0" layoutY="147.0"/>
+                <TextField fx:id="sexInput" layoutX="147.0" layoutY="188.0"/>
+                <Button layoutX="202.0" layoutY="292.0" mnemonicParsing="false"
+                        onAction="#onAdd" text="Add"/>
+                <Text layoutX="193.0" layoutY="18.0" strokeType="OUTSIDE"
+                      strokeWidth="0.0"/>
+                <Text layoutX="158.0" layoutY="90.0" strokeType="OUTSIDE"
+                      strokeWidth="0.0" text="Fill out for new product:"/>
+                <Label fx:id="messageLabel" layoutX="183.0" layoutY="264.0"
+                       text="Message label"/>
+                <TextField fx:id="sizeInput" layoutX="147.0" layoutY="51.0"/>
+                <Text layoutX="105.0" layoutY="68.0" strokeType="OUTSIDE"
+                      strokeWidth="0.0" text="Size:"/>
+            </children>
+        </AnchorPane>
+        <Label layoutX="286.0" layoutY="358.0"/>
+        <Button layoutX="504.0" layoutY="21.0" mnemonicParsing="false"
+                onAction="#onBack" text="Back"/>
+    </children>
+</AnchorPane>

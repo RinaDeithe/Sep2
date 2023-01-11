@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="475.0" prefWidth="612.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.views.search.SearchController">
+    <children>
+        <AnchorPane layoutX="32.0" layoutY="40.0" prefHeight="419.0" prefWidth="474.0">
+            <children>
+                <Text layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product number:" />
+                <TextField fx:id="searchInput" layoutX="95.0" layoutY="7.0" onAction="#onSearchButton" prefHeight="16.0" prefWidth="242.0" />
+                <Button layoutX="348.0" layoutY="7.0" mnemonicParsing="false" onAction="#onSearchButton" text="Search" />
+                <TableView fx:id="searchTable" layoutX="15.0" layoutY="53.0" prefHeight="350.0" prefWidth="402.0">
+                    <columns>
+                        <TableColumn fx:id="columnID" prefWidth="83.0" text="ID" />
+                        <TableColumn fx:id="columnPrice" prefWidth="83.0" text="Price" />
+                        <TableColumn fx:id="columnSize" prefWidth="83.0" text="Size" />
+                        <TableColumn fx:id="columnSex" prefWidth="83.0" text="Sex" />
+                        <TableColumn fx:id="columnLocation" prefWidth="68.0" text="Location" />
+                    </columns>
+                </TableView>
+            </children>
+        </AnchorPane>
+        <Button layoutX="557.0" layoutY="14.0" mnemonicParsing="false" onAction="#onBack" text="Back" />
+        <Button layoutX="490.0" layoutY="413.0" mnemonicParsing="false" onAction="#onRequest" prefHeight="45.0" prefWidth="89.0" text="Request" />
+      <Label fx:id="messageLabel" layoutX="47.0" layoutY="452.0" text="messageLabel" />
+    </children>
+</AnchorPane>

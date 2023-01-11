@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact name="client2:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/client2_jar</output-path>
+    <root id="root">
+      <element id="archive" name="client.jar">
+        <element id="module-output" name="client" />
+      </element>
+      <element id="library" level="project" name="lib1" />
+      <element id="file-copy" path="$MAVEN_REPOSITORY$/junit/junit/3.8.2/junit-3.8.2.jar" />
+      <element id="library" level="module" name="JUnit5.7.0" module-name="client" />
+    </root>
+  </artifact>
+</component>

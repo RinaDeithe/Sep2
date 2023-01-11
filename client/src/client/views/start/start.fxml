@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="381.0" prefWidth="453.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.views.start.StartController">
+    <children>
+        <AnchorPane layoutY="-13.0" prefHeight="432.0" prefWidth="453.0">
+            <children>
+                <Button layoutX="17.0" layoutY="33.0" mnemonicParsing="false" onAction="#onAddShoe" prefHeight="175.0" prefWidth="192.0" text="Add shoe">
+               <font>
+                  <Font size="24.0" />
+               </font></Button>
+                <Button layoutX="17.0" layoutY="240.0" mnemonicParsing="false" onAction="#onSellReturnShoe" prefHeight="175.0" prefWidth="192.0" text="Sell/Return">
+               <font>
+                  <Font size="24.0" />
+               </font></Button>
+                <Button layoutX="244.0" layoutY="33.0" mnemonicParsing="false" onAction="#onFindShoe" prefHeight="175.0" prefWidth="192.0" text="Find shoe">
+               <font>
+                  <Font size="24.0" />
+               </font></Button>
+                <Button layoutX="244.0" layoutY="240.0" mnemonicParsing="false" onAction="#onInventory" prefHeight="175.0" prefWidth="192.0" text="Inventory">
+               <font>
+                  <Font size="24.0" />
+               </font></Button>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
